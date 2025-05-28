@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – Ayupathya</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gradient">
+  <header class="navbar">
+    <div class="container">
+    <h1 class="logo">AYUPATHYA</h1>
+       <a href="index.html" class="logo">
+      <img src="image/apalogo.jpg" alt="Ayupathya Logo" />
+    </a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="ayupathyalifestyle.html">Ayurveda Lifestyle Course</a></li>
+        <li> <a href="index.html" class="logo"></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="hero modern-hero">
+<div class="hero-image">
+      <img src="image/contact.png" alt="Contact Ayupathya" class="responsive-image">
+    </div>
+    <div class="hero-content hero-text">
+      <h2>Contact Ayupathya</h2>
+      <p>We'd love to hear from you. Please fill out the form below and we'll get back to you shortly.</p>
+      <form action="/contact" method="POST" onsubmit="return handleFormSubmit(event)">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="mobile" placeholder="Your Mobile Number" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer colorful-footer">
+    <p>&copy; 2025 Ayupathya Aahar Pvt Ltd. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const formData = new FormData(form);
+
+      fetch('/contact', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('Submission failed');
+        return res.text();
+      })
+      .then(response => {
+        alert('Thank you! Your message has been sent successfully.');
+        window.location.href = 'index.html';
+      })
+      .catch(error => {
+        alert('There was an error sending your message. Please try again later.');
+        console.error(error);
+      });
+
+      return false;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayurvedic Lifestyle Course – Ayupathya</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0fdfb;
+      color: #333;
+    }
+
+    header {
+      background-color: #004d40;
+      color: white;
+      padding: 20px;
+    }
+
+    .logo {
+      display: inline-block;
+      background: #dcedc8;
+      border-radius: 10px;
+      padding: 6px 8px;
+    }
+
+    .logo img {
+      height: 80px;
+      border-radius: 8px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .menu-icon {
+      font-size: 28px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding-left: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #004d40;
+        width: 100%;
+      }
+
+      #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+      }
+
+      .nav-links li {
+        padding: 10px 0;
+        border-top: 1px solid #00695c;
+      }
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #00796b;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      color: #00695c;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .process-step {
+      background: #e0f2f1;
+      padding: 1rem;
+      border-left: 5px solid #009688;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+
+    .faq {
+      background: #ffffff;
+      padding: 1rem;
+      border-left: 5px solid #009688;
+      margin-top: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+      background-color: #009688;
+      padding: 2rem;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .cta a {
+      background-color: white;
+      color: #009688;
+      padding: 0.8rem 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: white;
+      padding: 8px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .whatsapp-button img {
+      width: 48px;
+      height: 48px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="image/apalogo.jpg" alt="Ayupathya Logo" />
+      </a>
+      <h1 class="logo">AYUPATHYA</h1>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="ayupathyalifestyle.html">Ayurveda Lifestyle Course</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="section">
+    <h2 class="section-title">Ayurveda Lifestyle Course</h2>
+    <p>Transform your health through holistic knowledge. This course, led by <strong>Dr. Pranav Kumar</strong>, empowers you with Ayurvedic principles and daily habits for lifelong wellness.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Course Benefits</h3>
+        <ul>
+          <li>Understand your body type (doshas)</li>
+          <li>Learn seasonal Ayurvedic diets</li>
+          <li>Detoxification and immunity techniques</li>
+          <li>Daily wellness rituals for balance</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Ideal For</h3>
+        <ul>
+          <li>Health seekers & busy professionals</li>
+          <li>Women and family caregivers</li>
+          <li>Wellness and yoga practitioners</li>
+          <li>Anyone seeking holistic living</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="section-title">How the Course Works</h3>
+    <div class="process-step">📌 Step 1: Enroll online and receive your welcome kit</div>
+    <div class="process-step">📌 Step 2: Weekly video lessons and assignments</div>
+    <div class="process-step">📌 Step 3: Live Q&A sessions with Dr. Pranav Kumar</div>
+    <div class="process-step">📌 Step 4: Lifestyle tracker, guidance & certification</div>
+
+    <h3 class="section-title">FAQs</h3>
+    <div class="faq">
+      <h4>Is this course online or offline?</h4>
+      <p>This is a hybrid course: available both online and in-person at our wellness center.</p>
+
+      <h4>How long is the course?</h4>
+      <p>It spans 4 weeks with flexible access to recorded content and weekly live sessions.</p>
+
+      <h4>Will I get a certificate?</h4>
+      <p>Yes. On successful completion, you'll receive a certification of participation.</p>
+    </div>
+
+    <div class="cta">
+      <h2>Ready to Realign Your Life?</h2>
+      <p>Join our growing community and start living Ayurvedically!</p>
+      <a href="contact.html">Enroll Now</a>
+    </div>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/919910232254" class="whatsapp-button" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+  </a>
+</body>
+</html>

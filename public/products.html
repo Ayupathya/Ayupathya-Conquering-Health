@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Products – Ayupathya</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .product-section {
+      padding: 2rem 1rem;
+      background-color: #f9f9f9;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h3 {
+      color: #009688;
+    }
+
+    .product-info {
+      margin-bottom: 1rem;
+    }
+
+    .cta-buttons {
+      margin-top: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #009688;
+      color: white;
+      padding: 0.5rem 1rem;
+      margin-right: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00796b;
+    }
+
+    .reviews {
+      margin-top: 3rem;
+      background: #fff;
+      padding: 1.5rem;
+      border-left: 5px solid #009688;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .reviews h4 {
+      color: #444;
+    }
+
+    .reviews p {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body class="bg-texture">
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Ayupathya</h1>
+      <a href="index.html" class="logo">
+        <img src="image/apalogo.jpg" alt="Ayupathya Logo" />
+      </a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="ayupathyalifestyle.html">Ayurveda Lifestyle Course</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="content product-section">
+    <h2 class="section-title">Wholesome Ayurvedic Products</h2>
+
+    <div class="product-grid">
+      <!-- Barley Saktuk Card -->
+      <div class="product-card">
+        <img src="image/ayupathyabarley-Saktuk.png" alt="Ayupathya Barley Saktu" />
+        <h3>Ayupathya Barley Saktuk</h3>
+        <div class="product-info">
+          <p><strong>Description:</strong> Traditionally roasted barley flour, rich in fiber and essential nutrients. Ideal for summers and for digestive health.</p>
+          <p><strong>Benefits:</strong></p>
+          <ul>
+            <li>Boosts energy and stamina</li>
+            <li>Improves digestion</li>
+            <li>Supports weight management</li>
+          </ul>
+          <p><strong>Usage:</strong> Mix with cold water or buttermilk, add a pinch of salt or jaggery for a refreshing drink.</p>
+          <p><strong>Ingredients:</strong> 100% Roasted Barley</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn">Know More</a>
+        </div>
+      </div>
+
+      <!-- Wholesome Daliya Card -->
+      <div class="product-card">
+        <img src="image/apaproduct.png" alt="Ayupathya Wholesome Daliya" />
+        <h3>Ayupathya Wholesome Daliya</h3>
+        <div class="product-info">
+          <p><strong>Description:</strong> A nourishing mix of roasted grains and pulses. A complete meal for energy, strength, and wellness.</p>
+          <p><strong>Benefits:</strong></p>
+          <ul>
+            <li>Strengthens immunity and gut health</li>
+            <li>Balances Kapha and Pitta doshas</li>
+            <li>Low glycemic and ideal for diabetics</li>
+          </ul>
+          <p><strong>Usage:</strong> Cook with water or milk and spices. Ideal for porridge, khichdi or upma.</p>
+          <p><strong>Ingredients:</strong> Roasted Wheat, Moong Dal, Pearl Millet, Flax Seeds</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn">Know More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional Extra Product Card (Future) -->
+    <!--
+    <div class="product-card">
+      <img src="image/coming-soon.jpg" alt="Coming Soon Product" />
+      <h3>Coming Soon</h3>
+      <p>Stay tuned for our upcoming Ayurvedic snacks and mixes designed for wellness and balance.</p>
+    </div>
+    -->
+
+    <!-- Customer Reviews -->
+    <div class="reviews">
+      <h4>What Our Customers Say</h4>
+      <p>"The Barley Saktu is so refreshing and fills me up. I've switched from soft drinks to this!" – Ritu, Lakhisarai</p>
+      <p>"Ayupathya Daliya is a staple at our home. Tastes great and keeps us energized!" – Anil Kumar, Barahiya</p>
+      <p>"Ayurveda with taste – that’s what Ayupathya brings to our table!" – Dr. Seema, Patna</p>
+    </div>
+  </main>
+<section class="product-section">
+  <h2 class="section-title">Frequently Asked Questions (FAQs)</h2>
+  <div class="faq">
+    <h4>1. Are your products certified?</h4>
+    <p>Yes, our products are made following FSSAI guidelines. Certification is in progress and will be updated on our labels and website.</p>
+
+    <h4>2. Are these products suitable for all age groups?</h4>
+    <p>Absolutely. Our products are safe and beneficial for children, adults, and seniors. For personalized diets, consult our Ayurvedic expert.</p>
+
+    <h4>3. What is the shelf life of Ayupathya products?</h4>
+    <p>Barley Saktu: 6 months from manufacture. Wholesome Daliya: 9 months. Store in a cool, dry place in an airtight container.</p>
+
+    <h4>4. Do you offer bulk purchase or B2B supply?</h4>
+    <p>Yes. We partner with retailers, wholesalers, and health centers. <a href="contact.html">Contact us</a> for distributor inquiries.</p>
+
+    <h4>5. How can I place an order?</h4>
+    <p>Currently, you can order by contacting us directly. E-commerce functionality is coming soon!</p>
+  </div>
+</section>
+  <footer class="footer colorful-footer">
+    <p>&copy; 2025 Ayupathya Aahar Pvt Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>

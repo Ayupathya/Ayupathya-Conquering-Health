@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Ayupathya</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .timeline {
+      position: relative;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      background: #ccc;
+    }
+    .timeline-event {
+      position: relative;
+      width: 50%;
+      padding: 1rem 2rem;
+      box-sizing: border-box;
+    }
+    .timeline-event.left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-event.right {
+      left: 50%;
+    }
+    .timeline-event::before {
+      content: '';
+      position: absolute;
+      top: 1rem;
+      width: 20px;
+      height: 20px;
+      background: #ffb703;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .timeline-event.left::before {
+      right: -10px;
+    }
+    .timeline-event.right::before {
+      left: -10px;
+    }
+
+    .testimonials {
+      background: #f4f4f4;
+      padding: 2rem 1rem;
+    }
+    .testimonial {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: white;
+      border-left: 5px solid #009688;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">AYUPATHYA</h1>
+      <a href="index.html" class="logo">
+        <img src="image/apalogo.jpg" alt="Ayupathya Logo" />
+      </a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <a href="ayupathyalifestyle.html">Ayurveda Lifestyle Course</a>
+      </ul>
+    </div>
+  </header>
+
+  <main class="content colorful-section">
+    <h2>About Ayupathya Aahar Pvt Ltd</h2>
+    <p>
+      Ayupathya Aahar Pvt Ltd, founded in November 2023, is a forward-thinking food and wellness company dedicated to reviving the Ayurvedic way of life. Under the trademark brand name <strong>AYUPATHYA</strong> and the powerful tagline <em>“CONQUERING HEALTH”</em>, we integrate ancient wisdom with modern food science to create healthy and nourishing solutions for the body and mind.
+    </p>
+    <p>
+      We offer both offline and online dietary consultancy based on Ayurvedic principles, along with the production of natural food products like <strong>Ayupathya Barley Saktuk</strong> and <strong>Ayupathya Wholesome Daliya</strong>, which have been tested and appreciated by local communities.
+    </p>
+    <p>
+      Our mission is to promote preventive healthcare through personalized Ayurvedic nutrition and traditional dietary habits. We aim to empower every individual with the tools to restore their health naturally.
+    </p>
+    <p>
+      Our vision is to become a global leader in Ayurvedic food consultancy and traditional product innovation, reshaping modern eating patterns with age-old wellness knowledge.
+    </p>
+  </main>
+
+  <section class="gallery-section">
+    <h2 class="section-title">OUR TEAM</h2>
+    <div class="gallery-grid">
+      <div>
+        <img src="image/dr.pranavprofile.jpg" alt="Dr Pranav Kumar" />
+        <p><strong>Dr. Pranav Kumar</strong><br/>Co-founder, Ayurvedic Consultant</p>
+        <p>With deep roots in classical Ayurveda, Dr. Pranav Kumar brings years of experience in clinical practice and dietary therapy. He leads our consultation and product formulation.</p>
+      </div>
+      <div>
+        <img src="image/er.hariomprofile2.jpg" alt="Er Hariom Kumar" />
+        <p><strong>Er. Hariom Singh</strong><br/>Founder & Managing Director</p>
+        <p>Hariom Singh is the visionary behind Ayupathya’s formation. With a background in engineering and entrepreneurship, he manages the company’s operations, strategy, and business development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="colorful-section">
+    <h2>OUR JOURNEY</h2>
+    <div class="timeline">
+      <div class="timeline-event left">
+        <h4>Nov 2023</h4>
+        <p>Company incorporated as Ayupathya Aahar Pvt Ltd</p>
+      </div>
+      <div class="timeline-event right">
+        <h4>Jan 2024</h4>
+        <p>Initial consultations began in Lakhisarai with Ayurvedic diagnosis</p>
+      </div>
+      <div class="timeline-event left">
+        <h4>Mar 2024</h4>
+        <p>Sample production of Barley Saktuk and Wholesome Daliya</p>
+      </div>
+      <div class="timeline-event right">
+        <h4>Nov 2024</h4>
+        <p>Partnered with 2 retail/wholesale distributors</p>
+      </div>
+      <div class="timeline-event left">
+        <h4>May 2025</h4>
+        <p>500+ patients consulted and 200 users tested products</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="colorful-section">
+    <h2>OUR CORE VALUES</h2>
+    <ul>
+      <li><strong>Authenticity:</strong> Inspired by classical Ayurveda</li>
+      <li><strong>Transparency:</strong> Clean, honest labeling and formulations</li>
+      <li><strong>Community:</strong> Uplifting rural health and food awareness</li>
+      <li><strong>Innovation:</strong> Creating new products based on ancient wisdom</li>
+      <li><strong>Sustainability:</strong> Local sourcing and eco-friendly practices</li>
+    </ul>
+  </section>
+
+  <section class="colorful-section">
+    <h2>PARTNERSHIPS</h2>
+    <p>
+      Ayupathya has established meaningful collaborations with local retailers, wholesalers, and Ayurvedic practitioners to bring our vision closer to communities. We are also in the process of scaling our online presence and service reach across India.
+    </p>
+  </section>
+
+  <section class="colorful-section">
+    <h2>TESTIMONIALS</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p><strong>“Ayupathya's Saktuk gave me energy and better digestion. Loved the natural taste!”</strong><br/>– Rekha Devi, Lakhisarai</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>“Their dietary advice helped me manage my diabetes more naturally. Highly recommend!”</strong><br/>– Ramesh Kumar, Barahiya</p>
+      </div>
+      <div class="testimonial">
+        <p><strong>“The team is knowledgeable and responsive. Their Ayurveda approach is authentic.”</strong><br/>– Dr. Meena Sharma, Ayurvedic Practitioner</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="colorful-section">
+    <h2>GET IN TOUCH</h2>
+    <p>
+      We welcome inquiries for partnerships, consultations, or more information about our offerings. <a href="contact.html">Reach out to us here.</a>
+    </p>
+  </section>
+
+  <footer class="footer colorful-footer">
+    <p>&copy; 2025 Ayupathya Aahar Pvt Ltd. All rights reserved.</p>
+  </footer>
+</body>
+</html>
