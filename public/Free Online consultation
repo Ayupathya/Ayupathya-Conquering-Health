@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Consultation – Ayupathya</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-gradient">
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">AYUPATHYA</h1>
+      <a href="index.html" class="logo">
+        <img src="image/apalogo.jpg" alt="Ayupathya Logo" />
+      </a>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="ayupathyalifestyle.html">Ayurveda Lifestyle Course</a></li>
+        <li><a href="consultation.html" class="active">Online Consultation</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="hero modern-hero">
+    <div class="hero-image">
+      <img src="image/online-consultation.jpg" alt="Ayupathya Consultation" class="responsive-image" />
+    </div>
+
+    <div class="hero-content hero-text">
+      <h2>Online Ayurvedic Consultation</h2>
+      <p>Connect live with <strong>Dr. Pranav Kumar</strong> and receive personalized Ayurvedic advice from your home.</p>
+
+      <section class="consultation-info">
+        <h3>🔗 Live Consultation Access</h3>
+        <p>After submitting the form below, you’ll receive a Google Meet link and confirmation via email.</p>
+        <p><strong>Meet Link:</strong> <a href="https://meet.google.com/cxv-bzkt-vro" target="_blank" style="color:#00796b;">Join Google Meet</a></p>
+      </section>
+
+      <!-- FORMSTART -->
+      <form action="https://formspree.io/f/mabcdxyz" method="POST" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="number" name="age" placeholder="Age" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="mobile" placeholder="Mobile Number" required />
+        <input type="text" name="address" placeholder="City / Address" required />
+        <textarea name="symptoms" placeholder="Describe your symptoms or health concerns" required></textarea>
+
+        <label><strong>Upload Your Prescription:</strong></label>
+        <input type="file" name="prescription" accept=".pdf,.jpg,.jpeg,.png" required />
+
+        <label><strong>Upload Investigation Reports (if any):</strong></label>
+        <input type="file" name="investigation" accept=".pdf,.jpg,.jpeg,.png" />
+
+        <label><strong>Upload Your Photo:</strong></label>
+        <input type="file" name="photo" accept=".jpg,.jpeg,.png" required />
+
+        <label><strong>Preferred Consultation Date & Time:</strong></label>
+        <input type="datetime-local" name="preferred_time" required />
+
+        <button type="submit" class="btn-submit">Book Consultation</button>
+      </form>
+      <!-- FORMEND -->
+
+      <p style="margin-top: 10px; font-size: 0.9rem; color: #444;">
+        *You’ll receive your Google Meet link via email after form verification.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer colorful-footer">
+    <p>&copy; 2025 Ayupathya Aahar Pvt Ltd. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919910232254" class="whatsapp-button" target="_blank" title="Chat on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+  </a>
+</body>
+</html>
