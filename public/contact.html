@@ -35,13 +35,19 @@
     <div class="hero-content hero-text">
       <h2>Contact Ayupathya</h2>
       <p>We'd love to hear from you. Please fill out the form below and we'll get back to you shortly.</p>
-      <form action="/contact" method="POST" onsubmit="return handleFormSubmit(event)">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <input type="tel" name="mobile" placeholder="Your Mobile Number" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-submit">Send Message</button>
-      </form>
+     <form action="https://formsubmit.co/ayupathya2023@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <input type="tel" name="mobile" placeholder="Your Mobile Number" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <!-- Optional hidden fields -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Contact Form Submission from Ayupathya Website">
+  <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+
+  <button type="submit" class="btn-submit">Send Message</button>
+</form>
     </div>
   </main>
 
