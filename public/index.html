@@ -84,6 +84,23 @@
       nav ul li a:hover { background: #e0f4e0; }
     }
     @media (min-width: 769px) { .menu-toggle { display: none; } }
+    /* Responsive Fix for Buttons */
+@media (max-width: 600px) {
+  .home-buttons {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    gap: 12px; /* Space between buttons */
+  }
+
+  .btn {
+    width: 80%;       /* Make buttons wider */
+    font-size: 16px;  /* Adjust size for small screens */
+  }
+}
+.home-buttons {
+  flex-wrap: wrap;
+}
+
 
     /* ======== HERO SECTION ======== */
     .hero {
@@ -422,3 +439,4 @@
 
 </body>
 </html>
+
