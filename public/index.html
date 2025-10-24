@@ -84,23 +84,6 @@
       nav ul li a:hover { background: #e0f4e0; }
     }
     @media (min-width: 769px) { .menu-toggle { display: none; } }
-    /* Responsive Fix for Buttons */
-@media (max-width: 600px) {
-  .home-buttons {
-    flex-direction: column; /* Stack vertically */
-    align-items: center;
-    gap: 12px; /* Space between buttons */
-  }
-
-  .btn {
-    width: 80%;       /* Make buttons wider */
-    font-size: 16px;  /* Adjust size for small screens */
-  }
-}
-.home-buttons {
-  flex-wrap: wrap;
-}
-
 
     /* ======== HERO SECTION ======== */
     .hero {
@@ -271,6 +254,43 @@
     .whatsapp-button img:hover {
       transform: scale(1.1);
     }
+/* ======== FIX FOR MOBILE BUTTON OVERLAP ======== */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-buttons a {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+/* Ensure hero layout adjusts on mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-content {
+    padding: 10px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .hero-buttons a {
+    width: 80%;
+    margin: 5px 0;
+  }
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
   </style>
 </head>
 
@@ -378,24 +398,7 @@
      <footer class="footer">
   <div class="footer-container">
     
-    <!-- Existing Columns -->
-    <div class="footer-column">
-      <h3>Ayupathya Aahar Pvt Ltd</h3>
-      <p>Promoting health through Ayurveda-based nutrition and natural food products. Our goal is to restore balance and vitality using ancient wisdom and modern methods.</p>
-    </div>
-
-    <div class="footer-column">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="consultation.html">Consultation</a></li>
-        <li><a href="ayupathyalifestyle.html">Lifestyle Course</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+   
 
     <div class="footer-column">
       <h4>Contact Us</h4>
@@ -439,4 +442,3 @@
 
 </body>
 </html>
-
